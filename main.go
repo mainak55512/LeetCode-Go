@@ -8,35 +8,9 @@ type ListNode struct {
 }
 
 func main() {
-	node3 := ListNode{
-		Val:  4,
-		Next: nil,
-	}
-	node2 := ListNode{
-		Val:  2,
-		Next: &node3,
-	}
-	node1 := ListNode{
-		Val:  1,
-		Next: &node2,
-	}
-	list1 := &node1
-	node_n3 := ListNode{
-		Val:  4,
-		Next: nil,
-	}
-	node_n2 := ListNode{
-		Val:  3,
-		Next: &node_n3,
-	}
-	node_n1 := ListNode{
-		Val:  1,
-		Next: &node_n2,
-	}
-	list2 := &node_n1
-	merged := mergeTwoLists(list1, list2)
-
-	printList(merged)
+	// fmt.Println(removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
+	// fmt.Println(removeDuplicates([]int{1, 1, 2}))
+	fmt.Println(removeElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
 }
 
 func printList(listNode *ListNode) {
