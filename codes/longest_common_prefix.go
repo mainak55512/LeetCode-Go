@@ -23,7 +23,7 @@ Constraints:
 strs[i] consists of only lowercase English letters if it is non-empty.
 */
 
-package main
+package codes
 
 func longestCommonPrefix(strs []string) string {
 	prefix := strs[0]

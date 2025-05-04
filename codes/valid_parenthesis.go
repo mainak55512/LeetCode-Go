@@ -40,7 +40,7 @@ Constraints:
 s consists of parentheses only '()[]{}'.
 */
 
-package main
+package codes
 
 func isValid(s string) bool {
 	var parenStack []rune

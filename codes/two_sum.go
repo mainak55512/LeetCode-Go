@@ -30,7 +30,7 @@ Constraints:
 Only one valid answer exists.
 */
 
-package main
+package codes
 
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)

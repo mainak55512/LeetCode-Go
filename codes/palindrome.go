@@ -25,7 +25,7 @@ Constraints:
 -231 <= x <= 231 - 1
 */
 
-package main
+package codes
 
 func IsPalindrome(x int) bool {
 	if x < 0 {

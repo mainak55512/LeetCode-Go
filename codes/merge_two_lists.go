@@ -23,7 +23,14 @@ The number of nodes in both lists is in the range [0, 50].
 Both list1 and list2 are sorted in non-decreasing order.
 */
 
-package main
+package codes
+
+import "fmt"
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
 
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	var temp *ListNode = nil
@@ -49,4 +56,13 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	}
 	temp.Next = mergeTwoLists(list1, list2)
 	return temp
+}
+
+func printList(listNode *ListNode) {
+	if listNode.Next == nil {
+		fmt.Println(listNode.Val)
+		return
+	}
+	fmt.Println(listNode.Val)
+	printList(listNode.Next)
 }

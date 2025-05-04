@@ -43,7 +43,7 @@ Constraints:
 nums is sorted in non-decreasing order.
 */
 
-package main
+package codes
 
 func removeDuplicates(nums []int) int {
 	idx := 0
