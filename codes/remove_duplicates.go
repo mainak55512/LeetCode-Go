@@ -45,7 +45,7 @@ nums is sorted in non-decreasing order.
 
 package codes
 
-func removeDuplicates(nums []int) int {
+func RemoveDuplicates(nums []int) int {
 	idx := 0
 	for i := 0; i < len(nums); i++ {
 		if nums[i] != nums[idx] {

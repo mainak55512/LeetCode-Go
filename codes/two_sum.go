@@ -32,7 +32,7 @@ Only one valid answer exists.
 
 package codes
 
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for i, num := range nums {
 		if j, ok := m[target-num]; ok {

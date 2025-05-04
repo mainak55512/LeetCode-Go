@@ -46,7 +46,7 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 
 package codes
 
-func romanToInt(s string) int {
+func RomanToInt(s string) int {
 	strLen := len(s)
 	val := 0
 	for i := 0; i < len(s); i++ {

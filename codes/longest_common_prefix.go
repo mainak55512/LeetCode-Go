@@ -25,7 +25,7 @@ strs[i] consists of only lowercase English letters if it is non-empty.
 
 package codes
 
-func longestCommonPrefix(strs []string) string {
+func LongestCommonPrefix(strs []string) string {
 	prefix := strs[0]
 	for _, elem := range strs[1:] {
 		i := 0

@@ -42,7 +42,7 @@ s consists of parentheses only '()[]{}'.
 
 package codes
 
-func isValid(s string) bool {
+func IsValid(s string) bool {
 	var parenStack []rune
 	for _, elem := range s {
 		if elem == '(' || elem == '{' || elem == '[' {

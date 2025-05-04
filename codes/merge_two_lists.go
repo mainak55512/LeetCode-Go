@@ -32,7 +32,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	var temp *ListNode = nil
 	if list1 == nil && list2 != nil {
 		return list2
@@ -54,7 +54,7 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 		}
 		list2 = list2.Next
 	}
-	temp.Next = mergeTwoLists(list1, list2)
+	temp.Next = MergeTwoLists(list1, list2)
 	return temp
 }
 
