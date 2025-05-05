@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// fmt.Println(removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
-	// fmt.Println(removeDuplicates([]int{1, 1, 2}))
-	fmt.Println(codes.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
+	digits := []int{7, 2, 8, 5, 0, 9, 1, 2, 9, 5, 3, 6, 6, 7, 3, 2, 8, 4, 3, 7, 9, 5, 7, 7, 4, 7, 4, 9, 4, 7, 0, 1, 1, 1, 7, 4, 0, 0, 6}
+	fmt.Println(codes.PlusOne(digits))
 }
